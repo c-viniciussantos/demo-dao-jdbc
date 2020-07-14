@@ -4,12 +4,11 @@ import java.util.List;
 
 import model.entities.Department;
 
-public interface DepatmentDao {
+public interface DepartmentDao {
 
-	void insert (Department obj); 
+	void insert(Department obj);
 	void update(Department obj);
-	void delete(Department id);
+	void deleteById(Integer id);
 	Department findById(Integer id);
 	List<Department> findAll();
-	
 }
